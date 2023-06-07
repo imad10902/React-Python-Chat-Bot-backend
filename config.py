@@ -7,12 +7,12 @@ class Config(object):
     DEBUG = True
     TESTING = False
 
-class ProductionConfig(Config):
+class DevelopmentConfig(Config):
     SECRET_KEY = "this-is-a-super-secret-key"
     OPENAI_KEY = os.getenv("OPENAI_KEY")
 
 config = {
     'development': DevelopmentConfig,
     'testing': DevelopmentConfig,
-    'production': ProductionConfig
+    'production': DevelopmentConfig
 }
