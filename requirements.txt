@@ -24,3 +24,4 @@ urllib3
 waitress
 Werkzeug
 yarl
+python-dotenv==1.0.0
