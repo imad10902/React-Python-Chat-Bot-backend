@@ -4,7 +4,7 @@ import config
 import aiapi
 
 app= Flask(__name__)
-app.config.from_object(config.config['development'])
+app.config.from_object(config.config['production'])
 CORS(app)
 app.run(debug=True)
 @app.route("/", methods= ['POST', 'GET'])
